@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{main-templates}">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link th:href="@{/css/Home.css}" rel="stylesheet">
+</head>
+<body>
+
+ <div class="col-lg-4" layout:fragment="body">
+    
+   <h2 class="lg">Registra</h2> <br> <br>
+ 
+  <form th:action="@{/user/salva}" method="post" th:object="${utente}">
+  <div class="label-group">
+     <div class="mb-3">
+      <label  class="form-label">Username</label>
+   <input type="text" class="form-control, textfield" placeholder="Digita username" name="username" required>
+   </div> <br>
+   
+        <div class="mb-3">
+      <label  class="form-label">Nome</label>
+   <input type="text" class="form-control, textfield" placeholder="Digita nome" name="nome" required>
+   </div> <br>
+        <div class="mb-3">
+      <label  class="form-label">Cognome</label>
+   <input type="text" class="form-control, textfield" placeholder="Digita cognome" name="cognome" required>
+   </div> <br>
+   
+    
+      <div class="mb-3">
+      <label  class="form-label">Password</label>
+   <input type="text" class="form-control, textfield" placeholder="Digita password" name="password" required>
+   </div>
+</div>
+       <button type="submit" style="margin-bottom: 20px" class="btn btn-primary">Registra</button>
+   </form>
+  
+   </div>
+</body>
+</html>

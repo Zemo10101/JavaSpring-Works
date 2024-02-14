@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="it"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{main-templates}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link th:href="@{/css/elimina.css}" rel="stylesheet">
+</head>
+<body>
+<div class="col-lg-4" layout:fragment="body">
+<h2 class="lg"> Qui puoi eliminare i quiz  </h2> <br> <br>
+<div id="box">
+
+</div> <br> <br>
+<button type="submit" id="cancella" class="Btn">Cancella</button>
+
+
+
+
+ <script th:src="@{/js/delete.js}"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{main-templates}">
+<head>
+<meta charset="utf-8">
+<title>Lista Utenti</title>
+<link th:href="@{/css/Home.css}" rel="stylesheet">
+</head>
+<body>
+	<div>
+		<div class="col-lg-4" layout:fragment="body">
+				<h2 class="lg">Lista Utenti</h2>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Username</th>
+							<th>Nome</th>
+							<th>Cognome</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr th:each="ut:${utenti}">
+							<td th:text="${ut.username}"></td>
+							<td th:text="${ut.nome}"></td>
+							<td th:text="${ut.cognome}"></td>
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+		</div>
+</body>
+</html>

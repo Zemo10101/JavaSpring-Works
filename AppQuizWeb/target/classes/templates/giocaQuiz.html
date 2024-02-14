@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{main-templates}">
+<head>
+<meta charset="UTF-8">
+<title>Gioca Qui</title>
+<link th:href="@{/css/gioca.css}" rel="stylesheet">
+</head>
+<body>
+    <div class="col-lg-4" layout:fragment="body">
+    <form>
+    <h2 class="lg"> Quiz </h2>
+    <br> <br>
+    <label id="avviso"> </label> <br>
+    <label id="quizInseriti" class="qI"> </label> 
+    <div id="timer"> </div>
+   <button type="submit" id="giocaBtn" class="BtnAv" > Gioca </button> 
+   <br>  <label id="punteggio"> </label> <br> <br>
+    <button type="submit" id="riprovaBtn" class="BtnAv">Riprova</button>
+    
+   <label id="domande"> </label>
+   <br> <br>
+   <ul class="list" id="risposte"> </ul>
+   <br> <br>
+    <button type="submit" id="rispondiBtn" class="BtnRisp" >Rispondi</button> <br> <br>
+    </form>
+      <script th:src="@{/js/main.js}"></script> 
+  </div>
+
+</body>
+</html>

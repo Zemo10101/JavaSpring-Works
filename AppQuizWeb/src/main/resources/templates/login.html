@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{main-templates}">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link th:href="@{/css/Home.css}" rel="stylesheet">
+</head>
+<body>
+<div  >
+ <div class="col-lg-4" layout:fragment="body">
+   <h2 class="lg">Login</h2> <br> <br>
+   <!-- quando nell'url è impostata la querystring con il parametro logout (localhost:8080/login?logout) 
+          allora param.logout è true -->
+  <form th:action="@{/login}" method="post">
+  <div class="label-group">
+     <div class="mb-3">
+      <label  class="form-label">Username</label>
+   <input type="text" class="form-control, textfield" placeholder="Digita username" name="username" required>
+   </div>
+      <div class="mb-3">
+      <label  class="form-label">Password</label>
+   <input type="password" class="form-control, textfield" placeholder="Digita password" name="password" required>
+   </div>
+   </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+   </form>
+   <!-- quando nell'url è impostata la querystring con il parametro error (localhost:8080/login?error) 
+          allora param.error è true -->
+  <div th:if="${param.error}"> Username o password errati </div>
+  <br> <br>
+  <p th:if="${param.logout}"> Utente ha eseguito il logout! </p>
+   </div>
+ </div>
+</body>
+</html>

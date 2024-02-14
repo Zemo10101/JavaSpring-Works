@@ -1,0 +1,112 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/sfondo.jpg');
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ececec;
+    text-align: center;
+    
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label-group {
+    margin-bottom: 20px;
+}
+
+.label-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.textfield {
+    width: calc(50% - 5px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.textfield:hover{
+	background: #82dbfd;
+}
+
+.radio-group {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #0080ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0080ff;
+}
+
+.footer {
+    background-color: #3498db;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.lg{
+	text-align: center;
+	border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgb(77, 77, 77);
+    color: white;
+}
+
+

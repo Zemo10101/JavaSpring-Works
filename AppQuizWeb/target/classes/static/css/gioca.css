@@ -1,0 +1,84 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/sfondo.jpg');
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ececec;
+    text-align: center;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ele {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #bebebe;
+  border-radius: 5px;
+}
+
+
+button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #0080ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    
+}
+
+button:hover {
+    background-color: #0080ff;
+}
+
+ label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.BtnAv{
+	margin-left: 45%;
+}
+
+.BtnRisp {
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lg{
+	text-align: center;
+	border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgb(77, 77, 77);
+    color: white;
+}
+
+#timer{
+	font-weight: bold;
+}
+
+.qI{
+	 color: #82dbfd;
+}
+
+

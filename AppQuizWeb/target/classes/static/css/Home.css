@@ -1,0 +1,128 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/sfondo.jpg');
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ececec;
+    text-align: center;
+}
+
+.label-group {
+    margin-bottom: 20px;
+}
+
+.label-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.textfield {
+    width: calc(50% - 5px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.textfield:hover{
+	background: #82dbfd;
+}
+
+.lg{
+	text-align: center;
+	border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgb(77, 77, 77);
+    color: white;
+}
+
+.st{
+	color: #82dbfd;
+}
+
+button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #0080ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0080ff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Stile delle celle della tabella */
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Stile dell'intestazione della tabella */
+th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Stile delle righe alternate */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Stile quando si passa con il mouse sopra una riga */
+tr:hover {
+  background-color: #82dbfd;
+}
+
+/* Stile del colore del testo arancione */
+.orange-text {
+  color: #0080ff;
+}
+
+/* Stile del titolo della tabella */
+.table-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ele {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #bebebe;
+  border-radius: 5px;
+
+	
+}
+
+

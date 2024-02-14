@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+       layout:decorate="~{main-templates}">
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+<link th:href="@{/css/Home.css}" rel="stylesheet">
+</head>
+<body>
+   <div class="col-lg-4" layout:fragment="body">
+    
+       <h2 class="lg">Home</h2> <br><br>
+       <div sec:authorize="isAuthenticated()"> </div>
+       <label> Utente è autenticato con ruolo <span class="st" sec:authentication="principal.authorities"> </span></label>
+       <div sec:authorize="hasAuthority('USER')"> <p> Entrato come utente </p> </div>
+     <div sec:authorize="hasAuthority('ADMIN')"> <p> Entrato come amministratore </p> </div>
+     <br> <br>
+      <label> Autorizzazioni del sito: </label>
+      <br> <br>
+      
+     <div class="ele"> 
+      <label class="st"> USER </label> <br>
+   <label> Pagina di gioco </label> <br>
+   <label> Pagina Home </label> <br>
+  
+ <br>
+ 
+    <label class="st"> ADMIN </label> <br>
+   <label> Pagina di creazione </label> <br>
+   <label> Pagina di cancellazione </label> <br>
+   <label> Pagina con lista Utenti </label> <br>
+    <label> Pagina Home </label>
+   </div>
+     
+     </div>
+</body>
+</html>

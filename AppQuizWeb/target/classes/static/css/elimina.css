@@ -1,0 +1,76 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/sfondo.jpg');
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ececec;
+            
+}
+
+button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #0080ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0080ff;
+}
+
+.log{
+	text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.lg {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgb(77, 77, 77);
+    color: white;
+}
+
+.Btn{
+	margin-left: 43%;
+}
+
+.box{
+	margin-left: 32%;
+}
+
+
+.eleBox{
+	width: 200px; /* Sostituisci con la larghezza desiderata */
+    height: 100px; /* Sostituisci con l'altezza desiderata */
+    border-radius: 10px; /* Imposta il raggio dei bordi arrotondati */
+    background-color: #e0e0e0; /* Sostituisci con il colore di sfondo desiderato */
+    padding: 10px; /* Aggiunge spaziatura interna, opzionale */
+     margin-bottom: 10px;
+    /* Altri stili desiderati */
+    text-align: center;
+     
+   
+   
+}
+
